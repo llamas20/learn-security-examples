@@ -1,0 +1,5 @@
+The vulnerability is that the input is not sanitized.  Thus, a malicious user can use the input form 
+to inject malicious code into the site.  By converting all input into strings, malicious users will
+not be able to inject malicious code into the site.
+
+Tampering violates the Integrity aspect of the CIA properties by manipulating the transmitted data.

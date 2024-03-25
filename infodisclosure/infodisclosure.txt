@@ -1,3 +1,10 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+By not sanitizing the parameters, the malicious user can inject a query or other code into the endpoint and receive data without
+permission.  The secure version prevents this by sanitizing the parameters to disallow malicious users from querying the database (in this case)
+directly through the URL.
+
 Which CIA property does tampering violate?
+This violates Confidentiality and Integrity by not protecting sensitive data and allowing malicious code to be passed into the program.
+
 What additional security mechanisms can you incorporate?
+Data sanitization and encryption will disallow malicious users from gaining information they should be able to.
