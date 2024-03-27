@@ -1,2 +1,6 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+The vulnerability is that certain inputs can crash the server.  The secure version uses a try/catch block
+to avoid a crash.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+In dos attacks, rate limiting allows for attacks to be mitigated.  This alongside making sure that 
+the server doesn't crash with error handling can make for a secure program.

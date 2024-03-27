@@ -1,0 +1,3 @@
+To avoid this, confirm that the user using the program has the privilages necessary for the operation.
+User authentication will disallow non-admin users from performing administrative tasks.  Using session tokens
+and 2FA can be used as well to avoid any sensitive information from being passed along to malicious users.
