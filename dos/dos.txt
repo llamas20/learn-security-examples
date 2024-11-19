@@ -1,0 +1,5 @@
+Mongo mandates that ids must be a specific length and format.  If it is not in this format, then mongo will crash
+This error is not being handled in our code.  Therefore, the server will crash upon a single invalid call.
+To fix this, handle the error with a try/catch block so that the server will not crash upon a mongo error.
+We also use a rate limiter to set an expected throughput to our backend services.  This will make sure that the 
+server does not get overwhelmed by user requests and crash as a result.

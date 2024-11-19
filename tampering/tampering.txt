@@ -1,0 +1,8 @@
+The vulnerabilities originate from our lack of input sanitization.  We cannot trust the inputs given by users to not be malicious.
+An attacker can use this vulnerability to inject malicious code into our program.
+
+An attacker can input code rather than a normal input.  Because we do not sanitize the input, this code will be run by the program
+without issue.  This is a massive problem.
+
+secure.ts sanitizes the input with the function escapeHTML.  This function uses regex to take any possible HTML tags, escapes, and other
+possibly problematic characters out of the input and creates a safe version which can be processed by the program.

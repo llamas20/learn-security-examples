@@ -1,2 +1,4 @@
-- Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
-- What additional security mechanisms can you incorporate to prevent such attacks?
+Sufficient logging of user information and activity on the server allows for program administrators to track malicious activity.  The insecure
+version does not do this.
+Making the log immutable allows it to not be tampered with.  Regular log auditing is also a must to make sure nothing suspicious 
+is found in the log that could be cause for alarm

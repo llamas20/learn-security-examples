@@ -1,0 +1,4 @@
+So long as we know the id of an administrator, we can pretend to be the admin and perform administrative operations.
+We're relying too much on untrusted input sources and thus we have an insecure program.
+
+By using some form of user authorization such as cookies, we can keep unauthorized users from performing certain or all requests

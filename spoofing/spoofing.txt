@@ -1,0 +1,4 @@
+By using the flags in the cookies generated properly, this protects their information from being
+used/found by unauthorized users.  For example, the flags prevent the cookies from being stolen
+in mal-steal-cookie.html by blocking the site from gaining the cookie information.  Spoofing 
+violates the Confidentiality aspect of the CIA properties.

@@ -1,0 +1,5 @@
+One can inject a NOSQL query into the uri with ease.  The program is not checking whether the given username is a valid
+username or if it is a possible malicious query.  For that reason, it is trivial to NOSQL inject in the program.
+On top of this, the user's information is not hashed.  Therefore it's just available for anyone to see in plaintext.
+
+Once again, the answer is input sanitization.  By sanitizing the input one can ensure this does not happen.
